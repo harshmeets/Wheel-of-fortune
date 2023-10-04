@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wheel of Fortune</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to the Wheel of Fortune</h1>
+            <p>Available Coins: <span id="coins">100</span></p>
+            <p>Time Left: <span id="timer">30</span> seconds</p>
+            <button id="add-coin-button">Add Coin</button> <!-- Add Coin button -->
+        </div>
+
+        <div class="color-options">
+            <div class="color-option red" data-color="red"></div>
+            <div class="color-option green" data-color="green"></div>
+            <div class="color-option yellow" data-color="yellow"></div>
+            <div class="color-option orange" data-color="orange"></div>
+            <div class="color-option pink" data-color="pink"></div>
+            <div class="color-option blue" data-color="blue"></div>
+            <div class="color-option purple" data-color="purple"></div>
+        </div>
+
+        <div id="bet-amounts">
+            <p>Bet Amounts:</p>
+            <ul>
+                <li class="bet-amount" data-color="red">Red: <span>0</span></li>
+                <li class="bet-amount" data-color="green">Green: <span>0</span></li>
+                <li class="bet-amount" data-color="yellow">Yellow: <span>0</span></li>
+                <li class="bet-amount" data-color="orange">Orange: <span>0</span></li>
+                <li class="bet-amount" data-color="pink">Pink: <span>0</span></li>
+                <li class="bet-amount" data-color="blue">Blue: <span>0</span></li>
+                <li class="bet-amount" data-color="purple">Purple: <span>0</span></li>
+            </ul>
+        </div>
+
+        <div id="result-dialog">
+            <p id="result-display"></p>
+        </div>
+
+        <div id="results">
+            <h2>Last 10 Results:</h2>
+            <ul id="results-list">
+                <!-- Last 10 results will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
